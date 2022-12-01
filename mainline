@@ -1,0 +1,12 @@
+def calculator(x,s,y):
+    if s=='+':
+        return x+y
+    elif s=='-':
+        return x-y
+    elif s=='/':
+        return x/y
+    elif s=='*':
+        return x*y
+
+x,s,y=map(str,input('Please enter two numbers and operator between them ').split())
+print(calculator(int(x),s,int(y)))
